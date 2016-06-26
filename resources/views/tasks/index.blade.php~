@@ -50,7 +50,7 @@
 			<table class="table table-striped task-table">
 		                    <thead>
 		                        <th>Task</th>
-		                        <th>ToDo</th>    //ToDo
+		                        <th></th>    //ToDo
 		                        <th>&nbsp;</th>
 		                    </thead>
 		                    <tbody>
@@ -71,7 +71,7 @@
 		                                    </form>
 		                                </td>
 		                                <!-- Task Delete Button -->
-		                                <!--td>
+		                                <td>
 		                                    <form action="/task/{{ $task->id }}" method="POST">
 		                                        {{ csrf_field() }}
 		                                        {{ method_field('DELETE') }}
@@ -80,7 +80,7 @@
 		                                            <i class="fa fa-btn fa-trash"></i>Delete
 		                                        </button>
 		                                    </form>
-		                                </td-->
+		                                </td>
 		                            </tr>
 					@endif
 		                        @endforeach
@@ -105,7 +105,7 @@
                                         
                                         <!-- Task done Button  // hanouz kar nemikone-->
                                         <td>
-                                            <form action="/task/{{ $task->id }}/done" method="GET">
+                                            <form action="/task/{{ $task->id }}/todo" method="GET">
                                                 {{ csrf_field() }}
                                                 {{ method_field('PATCH') }}
 
