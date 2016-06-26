@@ -34,7 +34,7 @@ Route::group(['middleware' => ['web']], function () {
 
     //add propriate route //check path ????
     Route::get('/task/{task}/done', 'TaskController@MarkAsDone');
-    Route::get('/task/{task}/todo', 'TaskController@MarkAsToDo');
+    Route::put('/task/{task}/todo', 'TaskController@MarkAsToDo');
 
     Route::auth();
 

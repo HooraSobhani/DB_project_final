@@ -158,7 +158,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 	// add ide helper to provider array
-     	Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+     	//Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

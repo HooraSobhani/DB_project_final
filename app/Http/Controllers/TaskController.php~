@@ -87,7 +87,6 @@ class TaskController extends Controller
 	Log::info('DONEEE= '.$task->state);
         $task->state=true;
 	Log::info('DONEEE= '.$task->state);
-	$task->save();
         return redirect('/tasks');
     }
     // change tasks from Done to toDo
@@ -96,7 +95,6 @@ class TaskController extends Controller
 	Log::info('TODOOO= '.$task->state);
         $task->state=false;
 	Log::info('TODOOO= '.$task->state);
-	$task->save();
         return redirect('/tasks');
     }
 }

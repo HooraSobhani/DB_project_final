@@ -17,6 +17,7 @@ class CreateTasksTable extends Migration
             $table->integer('user_id')->index();
             $table->string('name');
             $table->timestamps();
+            $table->boolean('state');   // insert state to task table   //false-> to Do (default)   //true -> Done
         });
     }
 

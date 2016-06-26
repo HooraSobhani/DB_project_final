@@ -105,7 +105,7 @@
                                         
                                         <!-- Task done Button  // hanouz kar nemikone-->
                                         <td>
-                                            <form action="/task/{{ $task->id }}/todo" method="GET">
+                                            <form action="/task/{{ $task->id }}/done" method="GET">
                                                 {{ csrf_field() }}
                                                 {{ method_field('PATCH') }}
 

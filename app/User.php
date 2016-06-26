@@ -5,6 +5,12 @@ namespace App;
 use App\Task;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * App\User
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Task[] $tasks
+ * @mixin \Eloquent
+ */
 class User extends Authenticatable
 {
     /**
